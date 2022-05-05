@@ -1,0 +1,48 @@
+.EventsList{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 18px;
+    gap: 20px;
+    margin: 20px 50px;
+    align-items: center;
+    padding-right: 15px;
+}
+.EventName{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Technical{
+    padding: 15px;
+    width: 250px;
+    height: 200px;
+}
+.EventCategory{
+    color: black !important;
+}
+@media screen and (max-width:600px) {
+    .Technical{
+        width: 150px;
+        height: 130px;
+    }
+    .EventsList{
+        align-items: stretch;
+        margin: 2%;
+    }
+    .EventCategory{
+        color: black;
+    }
+    .EventInfo{
+        font-size: 13px;
+    }
+}
+.EventImg{
+    background: linear-gradient(135deg, #F395BA 0%, #FED182 100%);
+    border-radius: 18px;
+}
+.ContactDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

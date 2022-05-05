@@ -1,0 +1,24 @@
+.navBarInnerFlex{
+    display: flex;
+    padding: 30px 50px 0px 50px;
+}
+.navBarInnerFlex ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.navBarInnerFlex ul li{
+    list-style-type: none;
+    font-size: 23px;
+    color: #455D88;
+    font-weight: 900;
+    transition: all 1000ms linear;
+}
+.navBarInnerFlex ul li:hover{
+    color: black;
+}
+@media screen and (max-width:720px) {
+    .navBarInnerFlex ul li{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,57 @@
+.HomeFlex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.HomeOuterFlex {
+    margin-top: 55px;
+    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2{
+    color: #455D88;
+    font-size: 35px;
+}
+.title{
+    color: #455D88;
+    margin-top: 50px;
+}
+.timeBox{
+    background: linear-gradient(261.49deg, #556B92 29.69%, #161760 66.67%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    display: flex;
+    padding: 12px 23px;
+    gap: 15px;
+    font-size: 23px;
+    color: white;
+}
+.HomeDisplay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.collegeName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width:720px) {
+    h2{
+        font-size: 22px;
+        color: red;
+    }
+    .HomeDisplay{
+        flex-direction: column;
+    }
+    .collegeName{
+        align-items: flex-start;
+    }
+    .timeBox{
+        margin-top: 20px;
+    }
+}
