@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 export default function Cards(props) {
   console.log(props.Link)
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345,borderRadius:"10px" }}>
       <CardActionArea>
         <CardMedia
           component="img"
