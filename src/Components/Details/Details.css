@@ -1,0 +1,25 @@
+.DetailsFlex{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.DetailsTitle{
+    font-size: 60px;
+    margin-bottom: 1%;
+}
+.DetailsButton{
+    max-width: 200px;
+    padding: 10px 15px;
+    background: transparent;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.DetailsButton:hover{
+    letter-spacing: 1.2px;
+}
+.MuiTabs-flexContainer{
+    justify-content: space-evenly;
+}
