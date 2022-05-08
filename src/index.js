@@ -24,6 +24,12 @@ root.render(
       <Route path="/Events/Technical/Webdevelopment" element={<Details/>}/>
       <Route path="/Events/Technical/Appdevelopment" element={<Details/>}/>
       <Route path="/Events/Technical/TreasureHunt" element={<Details/>}/>
+      <Route path="/Events/NonTechnical/Paper" element={<Details/>}/>
+      <Route path="/Events/NonTechnical/Appdevelopment" element={<Details/>}/>
+      <Route path="/Events/NonTechnical/TreasureHunt" element={<Details/>}/>
+      <Route path="/Events/Workshop/Appdevelopment" element={<Details/>}/>
+      <Route path="/Events/Workshop/TreasureHunt" element={<Details/>}/>
+      <Route path="/Events/Workshop/Paper" element={<Details/>}/>
       <Route path="/Contact"  element={<Contact/>}/>
       </Routes>
     </BrowserRouter>

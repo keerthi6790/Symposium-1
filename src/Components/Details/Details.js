@@ -45,10 +45,9 @@ export default function Details() {
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
-  
     useEffect(() => {
         DetailsRender()
-    },[])
+    })
     function DetailsRender() {
         var a = window.location.pathname.split('/');
         let x;
@@ -59,9 +58,21 @@ export default function Details() {
                 )
             })
         }
+        else if(a[2]=="NonTechnical"){
+          x=NonTechnicalDetails.find((e)=>{
+            return(
+              e.id===a[3]
+            )
+          })
+        }
+        else if(a[2]=="Workshop"){
+          x=WorkshopDetails.find((e)=>{
+            return(
+              e.id===a[3]
+            )
+          })
+        }
         setComponent(x);   
-    console.log(Component) 
-
     }
     return (
         <div className="Details">
@@ -72,7 +83,7 @@ export default function Details() {
             </h1>
             <div style={{display:"flex",flexDirection:"row",gap:"30px"}}>
              <button className="DetailsButton"  onClick={()=>{window.location.href='#Goto'}}>Know More</button>
-             <button className="DetailsButton">Register</button>
+             <button className="DetailsButton" onClick={()=>{window.location.href='/Register'}}>Register</button>
             </div>
         </div>
         <div id="Goto">
@@ -82,23 +93,17 @@ export default function Details() {
     <Tab label="Rules and Regulations" {...a11yProps(1)} />
     <Tab label="Required" {...a11yProps(2)} />
   </Tabs>
+  <Box sx={{mx:12}}>
 <TabPanel value={value} index={0}>
   {Component.description}
 </TabPanel>
 <TabPanel value={value} index={1}>
-  {Component.rules.map(r=>{
-      console.log(r)
-      return(
-          <ul>
-              <li>{r.Zero}</li>
-          </ul>
-      )
-  })}
-  
+  {Component.rules}
 </TabPanel>
 <TabPanel value={value} index={2}>
 {Component.required}
 </TabPanel>
+</Box>
 </Box>
 
         </div>
